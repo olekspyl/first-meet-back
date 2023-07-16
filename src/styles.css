@@ -1,0 +1,46 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+body {
+    margin: 20px 20px;
+}
+
+.choices__inner {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 18px;
+    min-height: 0;
+}
+
+.is-open .choices__inner {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 18px;
+    min-height: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #c24040;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: none;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+ 
